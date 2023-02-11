@@ -22,11 +22,11 @@ submitButton.addEventListener("click",function(){
      * -----------
      */
    // step:04 -> verify email and password and check weather valid user or not
-   
+
    if(email==='tyrobee@newbie.com' && password ==="tyro@@1"){
-    console.log("Valid User");
+     window.location.href='bank.html';
 }else {
-    console.log("Invalid User");
+    alert("Email or Password doesn't match");
 }
 
 })
