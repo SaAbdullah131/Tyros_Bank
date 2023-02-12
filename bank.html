@@ -19,15 +19,15 @@
 </head>
 <body class="bg-indigo-100">
     <header>
-        <h1 class="text-indigo-600 font-medium text-3xl text-center mt-4">Let's Get Some Money</h1>
-        <iframe src="https://giphy.com/embed/xUPGGDNsLvqsBOhuU0" width="480" height="360" frameBorder="0" class="giphy-embed mt-4 mb-3" allowFullScreen></iframe>
+        <h1 class="text-indigo-600 font-medium text-3xl text-center mt-1">Let's Get Some Money</h1>
+        <iframe src="https://giphy.com/embed/xUPGGDNsLvqsBOhuU0" width="480" height="360" frameBorder="0" class="giphy-embed mt-2 mb-3" allowFullScreen></iframe>
     </header>
     <main>
-        <section>
-            <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto mt-12 text-white">
+        <section class="mt-4">
+            <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto text-white">
                 <div class="bg-green-600 p-8 rounded-xl text-center">
-                    <h4 class=" text-2xl">Deposite</h4>
-                    <h2 class="text-5xl">$00</h2>
+                    <h4 class=" text-2xl">Deposit</h4>
+                    <h2 class="text-5xl">$<span id="total-deposit">00</span></h2>
                 </div>
                 <div class="bg-orange-500 p-8 rounded-xl text-center">
                     <h4 class=" text-2xl">Withdraw</h4>
@@ -37,9 +37,24 @@
                     <h4 class=" text-2xl">Total Balance</h4>
                     <h2 class="text-5xl">$1240</h2>
                 </div>
-            
             </div>
         </section>
+        <!-- Deposit and Withdraw -->
+        <section class="mt-4">
+            <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto">
+                <div class="bg-fuchsia-400 p-8 rounded-xl ">
+                    <h4 class=" text-2xl text-white">Please Deposit</h4>
+                    <input class="w-9/12 block mb-2 p-1 rounded-md" type="number" name="" id="deposit-amount"placeholder="$ Amount you Want to Deposit">
+                    <button id="btn-deposit"class="bg-green-600 px-8 py-3 font-medium rounded-lg text-white hover:bg-sky-700">Deposit</button>
+                </div>
+                <div class="bg-sky-400 p-8 rounded-xl ">
+                    <h4 class=" text-2xl text-white">Please Withdraw</h4>
+                    <input class="w-9/12 block mb-2 p-1 rounded-md mb-2" type="number" name="" id="withdraw-amount"placeholder="$ Amount you Want to Withdraw">
+                   <button id="btn-withdraw"class="bg-red-600 px-8 py-3 font-medium rounded-lg text-white hover:bg-yellow-700">Withdraw</button>
+                </div>
+        </section>
     </main>
+    <!-- js file connect -->
+    <script src="js/deposit.js"></script>
 </body>
 </html>
